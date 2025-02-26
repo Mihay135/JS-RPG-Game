@@ -1,0 +1,82 @@
+body{
+    background-color: darkblue;
+}
+
+#text{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: justify;
+}
+
+#text > p#welcome{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 0;
+    color: rgb(224, 67, 67);
+}
+
+#game{
+    max-width: 500px;
+    max-height: 400px;
+    background-color: lightgray;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px lightslategray solid;
+    margin-top: 100px;
+    transition: all ease-in-out 0.05s;
+}
+
+#controls{
+    border: 1px black solid;
+    padding: 5px;
+}
+
+#stats{
+    border: 1px black solid;
+    color: black;
+    padding: 5px;
+}
+
+#monsterStats{
+    display: none;
+    border: 1px black solid;
+    color: white;
+    padding: 5px;
+    background-color: red;
+}
+
+.stat{
+    padding-right: 10px;
+}
+
+#btnReset{
+    font-size: 14px;
+    border-radius: 8px;
+    border-style: 1px whitesmoke solid;
+    border-width: 2px 1px 1px 1px;
+    outline: 1px lightcoral solid;
+    transition: all ease-in-out 0.1s;
+
+    cursor: pointer;
+}
+
+#btnReset:hover{
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    border-style: none;
+    color: whitesmoke;
+    outline-color: whitesmoke;
+}
+
+.tip{
+    color:rgb(255, 255, 116);
+}
+
+#reset{
+    margin-bottom: 5px;
+    border: 1px black hidden;
+}
+
