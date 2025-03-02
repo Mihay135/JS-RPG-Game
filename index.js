@@ -296,7 +296,7 @@ function defeatMonster() {
     button2.style.display = "none";
     button3.innerText = "Ok";
     button3.onclick = exitCombat;
-    text.innerText = "You have defeated the " + currentMonster.name + ". You receive " + goldGained + " gold and "+ xpGained + " experience.";
+    text.innerText += "\nYou have defeated the " + currentMonster.name + ". You receive " + goldGained + " gold and "+ xpGained + " experience.";
 }
 
 function winGame(){
@@ -309,9 +309,9 @@ function winGame(){
 
 function lose(){
     if(monsterHealth <= 0){
-        text.innerText = "The " + monsters[fighting].name +" killed you as you dealt it the final blow. You Died.\nRestart Game?";
+        text.innerText += "\nThe " + monsters[fighting].name +" killed you as you dealt it the final blow. You Died.\nRestart Game?";
     }else{
-        text.innerText = "The " + monsters[fighting].name + " got the better of you. You Died.\nRestart Game?"
+        text.innerText += "\nThe " + monsters[fighting].name + " got the better of you. You Died.\nRestart Game?"
     }
     
     button1.style.display = "none";
